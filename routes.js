@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
 });
 
 // Route pour une autre page
-app.get('/create_account', (req, res) => {
-  res.sendFile(__dirname + '/create_account.html');
+app.get('/log_in', (req, res) => {
+  res.sendFile(__dirname + '/log_in.html');
 });
 
 
