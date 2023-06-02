@@ -38,7 +38,7 @@
         "brandId": 2,
         "model": "Samsung Galaxy S23",
         "display": "6.8-inch Super AMOLED",
-        "processor": "Qualcomm Snapdragon 8 Gen2 ( 3,36 GHz)",
+        "processor": "Qualcomm Snapdragon 8 Gen2 (3,36 GHz)",
         "ram": "12 GB",
         "storage": [2, 3, 4],
         "battery": "5000 mAh",
@@ -56,7 +56,7 @@
         "battery": "4500 mAh",
         "price": 799,
         "cameraId": 2
-    }
+    },
     {
         "id": 4,
         "brandId": 2,
@@ -68,7 +68,7 @@
         "battery": "5000 mAh",
         "price": 899,
         "cameraId": 3
-    }
+    },
     {
         "id": 5,
         "brandId": 1,
@@ -80,7 +80,7 @@
         "battery": "4373 mAh",
         "price": 799,
         "cameraId": 1
-    }
+    },
     {
         "id": 6,
         "brandId": 4,
@@ -92,7 +92,7 @@
         "battery": "4500 mAh",
         "price": 899,
         "cameraId": 4
-    }
+    },
     {
         "id": 7,
         "brandId": 3,
