@@ -29,9 +29,22 @@ p {
 }
 
 h1 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 200;
     color: #333;
     font-size: 24px;
     font-size: 48px;
+    text-align: center;
+}
+
+h2 {
+    font-style: italic;
+    font-weight: 200;
+    color: #333;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;
+
 }
 
 .button1 {
@@ -214,14 +227,20 @@ h1 {
     font-weight: 700;
 }
 
-.firstP {
-    font-size: 16px;
-}
-
 .smartphoneList {
     display: flex;
-    flex-direction: row;
+    margin: 25px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 60px;
+    padding-left: 60px;
+    float : left;
+    clear: none;
     gap: 15px;
-    background-color: blue;
 }
 
+.smartphone-picture {
+    width: 200px;
+    height : 220px;
+}

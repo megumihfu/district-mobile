@@ -3,9 +3,6 @@
 <head>
     <title>District Mobile</title>
     <link rel="stylesheet" href="./styles.css">   
-
-    
-
 </head>
 
 <body>
@@ -25,23 +22,20 @@
         <h1>The most efficient tool for buying your smartphone</h1>
         <rect class="research"></rect>
         <p class="search-by">Search by</p>
-<!--         <input type="text" class="input-brand" placeholder="Brand"> -->
-
         <form id="search-form">
             <select class="input-brand" id="Brand"></select>
-
             <select class="input-camera" id="Camera"></select>
-            
             <select class="input-screen" id="Screen"></select>
-
             <select class="input-price" id="Price"></select>
         <input type="submit" id="searchButton" class="research_button" value="Search">
     </form>
     </div>
 
-    <div id="searchResults"></div>
+    <div>
+        <h2>Results</h2>
+        <div = id="smartphone-list"></div>
 
-    <div id="smartphone-list"></div>
+    </div>
     
     <script src="./loadItems.js"></script>
 </body>

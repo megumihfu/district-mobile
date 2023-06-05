@@ -55,6 +55,7 @@ const smartphones = [
         "storage": [1, 2, 3],
         "battery": "3279 mAh",
         "price": [4, "899€"],
+        "picture": "./pictures/iphone14.jpg",
         "cameraId": 1
     },
     {
@@ -67,6 +68,7 @@ const smartphones = [
         "storage": [2, 3, 4],
         "battery": "5000 mAh",
         "price": [4, "999€"],
+        "picture": "./pictures/s23.jpg",
         "cameraId": 1
     },
     {
@@ -79,6 +81,7 @@ const smartphones = [
         "storage": [2, 3],
         "battery": "4500 mAh",
         "price": [3, "799€"],
+        "picture": "./pictures/xiaomi13.jpg",
         "cameraId": 2
     },
     {
@@ -91,6 +94,7 @@ const smartphones = [
         "storage": [1, 2, 3],
         "battery": "5000 mAh",
         "price": [4, "899€"],
+        "picture": "./pictures/s20.jpg",
         "cameraId": 3
     },
     {
@@ -103,6 +107,7 @@ const smartphones = [
         "storage": [1, 2, 3, 4],
         "battery": "4373 mAh",
         "price": [3, "799€"],
+        "picture": "./pictures/iphone13promax.jpg",
         "cameraId": 1
     },
     {
@@ -115,6 +120,7 @@ const smartphones = [
         "storage": [1, 2, 3],
         "battery": "4500 mAh",
         "price": [4, "899€"],
+        "picture": "./pictures/xiaomi12s.jpg",
         "cameraId": 4
     },
     {
@@ -127,6 +133,7 @@ const smartphones = [
         "storage": [2, 3],
         "battery": "4800 mAh",
         "price": [3, "779€"],
+        "picture": "./pictures/oppoX6.jpg",
         "cameraId": 4
     }
 ]
@@ -161,13 +168,12 @@ document.getElementById("Price").innerHTML = html_price
 
 var form = document.getElementById("search-form");
 form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Empêche le rechargement de la page lors de la soumission du formulaire
+    event.preventDefault(); 
     filterResults();
 });
 
 //filtrage
 function filterResults() {
-    // Récupérer les valeurs sélectionnées dans les menus déroulants
     var selectedBrand = Number(document.getElementById("Brand").value);
     var selectedCamera = Number(document.getElementById("Camera").value);
     var selectedScreen = Number(document.getElementById("Screen").value);
@@ -207,7 +213,7 @@ function filterResults() {
     var resultsHtml = "";
     for (var i = 0; i < filteredSmartphonesNew.length; i++) {
       var smartphone = filteredSmartphonesNew[i];
-      resultsHtml += "<div class='smartphoneList'><p>" + smartphone.model + "</p><p>" + smartphone.price + "</p></div>";
+      resultsHtml += "<div class='smartphoneList'><p>" + smartphone.model + "</p>" + " <img class ='smartphone-picture' src=" + smartphone.picture + ">" + "<p>" + smartphone.price[1] + "</p></div>";
     }
     document.getElementById("smartphone-list").innerHTML = resultsHtml;
 }
