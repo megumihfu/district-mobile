@@ -131,7 +131,6 @@ const smartphones = [
     }
 ]
 
-
 var html_brand = ""
 for (var i = 0; i < specs.brands.length; i++) {
     var currentItem = specs.brands[i]
@@ -159,6 +158,59 @@ for (var i = 0; i < specs.price.length; i++) {
     html_price += "<option value=" + currentItem.id + ">" + currentItem.value + "</option>"
 }
 document.getElementById("Price").innerHTML = html_price
+
+var form = document.getElementById("search-form");
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Empêche le rechargement de la page lors de la soumission du formulaire
+    filterResults();
+});
+
+//filtrage
+function filterResults() {
+    // Récupérer les valeurs sélectionnées dans les menus déroulants
+    var selectedBrand = Number(document.getElementById("Brand").value);
+    var selectedCamera = Number(document.getElementById("Camera").value);
+    var selectedScreen = Number(document.getElementById("Screen").value);
+    var selectedPrice = Number(document.getElementById("Price").value);
+
+    console.log("Brand: " + selectedBrand)
+    console.log("Camera: " + selectedCamera)
+    console.log("Screen: " + selectedScreen)
+    console.log("Price: " + selectedPrice)
+
+    var filteredSmartphonesNew = smartphones
+
+    if(selectedBrand !== 0){
+      filteredSmartphonesNew = filteredSmartphonesNew.filter(
+        phone => phone.brandId === selectedBrand
+      )
+    }
+    if(selectedCamera !== 0) {
+      filteredSmartphonesNew = filteredSmartphonesNew.filter(
+        phone => phone.cameraId === selectedCamera
+      )
+    }
+    if(selectedScreen !== 0) {
+      filteredSmartphonesNew = filteredSmartphonesNew.filter(
+        phone => phone.display[1] === selectedScreen
+      )
+    }
+    if(selectedPrice !== 0) {
+      filteredSmartphonesNew = filteredSmartphonesNew.filter(
+        phone => phone.price[0] === selectedPrice
+      )
+    }
+
+    console.log(filteredSmartphonesNew)
+
+    // Générer le HTML pour afficher les résultats filtrés
+    var resultsHtml = "";
+    for (var i = 0; i < filteredSmartphonesNew.length; i++) {
+      var smartphone = filteredSmartphonesNew[i];
+      resultsHtml += "<div class='smartphoneList'><p>" + smartphone.model + "</p><p>" + smartphone.price + "</p></div>";
+    }
+    document.getElementById("smartphone-list").innerHTML = resultsHtml;
+}
 
 /* var smartphoneHtml = ""
 

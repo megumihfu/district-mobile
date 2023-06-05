@@ -27,26 +27,22 @@
         <p class="search-by">Search by</p>
 <!--         <input type="text" class="input-brand" placeholder="Brand"> -->
 
-        <form>
-            <select class="input-brand" id="Brand" name="choix1">
-            </select>
+        <form id="search-form">
+            <select class="input-brand" id="Brand"></select>
 
-            <select class="input-camera" id="Camera" name="choix2">
-              </select>
+            <select class="input-camera" id="Camera"></select>
             
-            <select class="input-screen" id="Screen" name="choix3">
-            </select>
+            <select class="input-screen" id="Screen"></select>
 
-            <select class="input-price" id="Price" name="choix4">
-            </select>
-
-
-        <input type="submit" class="research_button" value="Search">
+            <select class="input-price" id="Price"></select>
+        <input type="submit" id="searchButton" class="research_button" value="Search">
     </form>
     </div>
 
-    <div id="smartphone-list">
-    </div>
+    <div id="searchResults"></div>
+
+    <div id="smartphone-list"></div>
+    
     <script src="./loadItems.js"></script>
 </body>
 
