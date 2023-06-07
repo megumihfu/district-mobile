@@ -10,6 +10,7 @@ body {
 a {
     display: flex;
     text-decoration: none;
+    justify-content: center;
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 500;
@@ -73,7 +74,7 @@ h2 {
     padding: 30px 45px;
     left: 780px;
     top: 365px;
-    color: white;
+    color: black;
     background: #D9D9D9;
     mix-blend-mode: normal;
     border: 1px solid #D9D9D9;
@@ -94,30 +95,27 @@ h2 {
 }
 
 .logo {
+    display: flex;
     width: 83px;
     height: 70px;
-    left: 64px;
-    top: 14px;
     text-transform: uppercase;
     font-weight: 700;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .logInNav {
     display: flex;
-    padding: 20;
+    margin-bottom: 35px;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 13px;
 }
 
 .logoNav {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+/*     justify-content: center;
+    align-items: center; */
     gap: 13px;
 }
 
@@ -215,9 +213,9 @@ h2 {
 
 .center {
     display: flex;
+    position: absolute;
     background-image:url(pictures/home.png);
     background-repeat:no-repeat;
-    top : 200px;
     align-items: center;
     width: 100vw;
     height: 82vh;
@@ -225,6 +223,7 @@ h2 {
     justify-content: center;
     font-family: 'Plus Jakarta Sans';
     font-weight: 700;
+    clear: both;
 }
 
 .smartphoneList {
@@ -243,4 +242,100 @@ h2 {
 .smartphone-picture {
     width: 200px;
     height : 220px;
+}
+
+.logIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 536px;
+    height: 429px;
+    background: rgba(219, 226, 227, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: absolute;
+}
+
+.signPage {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.signIn {
+    position: absolute;
+    width: 476px;
+    height: 36px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.inputUser {
+    display: flex;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-size: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    width: 423px;
+    height: 73px; 
+    background: #CFCECE;
+    border-radius: 6px;
+    left: 636px;
+}
+
+.signButton {
+    box-sizing: border-box;
+    position: absolute;
+    width: 423px;
+    height: 67px;
+    background: #00A2D2;
+    border: 1px solid #00A2D2;
+    border-radius: 7px;
+    left: 636px;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitButton {
+    padding: 20px;
+    padding-left: 170px;
+    display: flex;
+    background: #00A2D2;
+    mix-blend-mode: normal;
+    border: 1px solid #00A2D2;
+    border-radius: 7px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.56);
+}
+
+.submitButton:hover {
+    color: whitesmoke;
+}
+
+.redirection {
+    position: absolute;
+    width: 411px;
+    height: 30px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.67);
+}
+
+
+.redirection:hover {
+    text-decoration: underline;
 }
