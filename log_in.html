@@ -6,8 +6,6 @@
 <!--     <button class="button button1"> 
         Create an account
     </button>  -->
-
-
 </head>
 
 <body>
@@ -23,17 +21,18 @@
     <div class="center">
         <div class="logIn"></div>   
         <p class="signIn">Sign in</p>
-        <form>
+        <form class="form">
             <div>
-                <input class="inputUser" style="top:110px;" type="text" id="email" name="email"><br>
-                <input class="inputUser" style="top:210px;" type="password" id="password" name="password"><br>
+                <input class="inputUser" placeholder="Email" style="top:110px;" type="text" id="email" name="email"><br>
+                <input class="inputUser" placeholder="Password" style="top:210px;" type="password" id="password" name="password"><br>
             </div>
-            <div class="signButton" style="top:310px">
+            <div class="signButton" id="signButton" style="top:310px">
                 <input class="submitButton", type="submit", value="Login">
             </div>
         </form>
-        <a href="sign_up.html"> <p class="redirection" style="top:375px"> Don’t have an account yet ? Create one here</p></a>
+        <a href="sign_up.html"> <p class="redirection" style="top:375px"> Don't have an account yet ? Create one here</p></a>
     </div>
-</body>
 
+    <script src="./logIn.js"></script>
+</body>
 </html>
