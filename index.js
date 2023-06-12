@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+
 const port = 3000;
 const host = 'localhost'
 const data = fs.readFileSync('./database.json', 'utf8');
