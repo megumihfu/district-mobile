@@ -209,20 +209,15 @@ function filterResults() {
 
     console.log(filteredSmartphonesNew)
 
-    // Générer le HTML pour afficher les résultats filtrés
     var resultsHtml = "";
     for (var i = 0; i < filteredSmartphonesNew.length; i++) {
       var smartphone = filteredSmartphonesNew[i];
       resultsHtml += "<div class='smartphoneList'><p>" + smartphone.model + "</p>" + " <img class ='smartphone-picture' src=" + smartphone.picture + ">" + "<p>" + smartphone.price[1] + "</p></div>";
     }
     document.getElementById("smartphone-list").innerHTML = resultsHtml;
+
+    var element = document.getElementById("smartphone-list");
+    element.scrollIntoView({ behavior: "smooth" });
+
+
 }
-
-/* var smartphoneHtml = ""
-
-for (var i = 0; i < smartphones.length; i++) {
-    var currentItem = smartphones[i]
-    smartphoneHtml += "<div class='smartphoneList'><p>" + currentItem.model + "</p><p>" + currentItem.price + "</p></div>"
-}
-
-document.getElementById("smartphone-list").innerHTML = smartphoneHtml */
