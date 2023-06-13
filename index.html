@@ -19,20 +19,33 @@
 
     <h1>The most efficient tool for buying your smartphone</h1>
     <div class="center">
-        <p class="search-by">Search by</p>
-        <rect class="research"></rect>
-        <form id="search-form">
-            <select class="input-brand" id="Brand"></select>
-            <select class="input-camera" id="Camera"></select>
-            <select class="input-screen" id="Screen"></select>
-            <select class="input-price" id="Price"></select>
-            <input type="submit" id="searchButton" class="research_button" value="Search">
-        </form>
+        <div class="research">
+            <p class="search-by">Search by</p>
+            <form id="search-form">
+                <div class="search-form">
+                    <select class="input-brand" id="Brand"></select>
+                    <select class="input-camera" id="Camera"></select>
+                    <select class="input-screen" id="Screen"></select>
+                    <select class="input-price" id="Price"></select>
+                </div>
+                <div class="research_button_div">
+                    <input class="research_button" type="submit" id="searchButton" value="Search">
+                </div>
+            </form>
+
+            <div class="brand">
+                <img class="logo" src="./pictures/brand/Apple-Logo.png" alt="Apple">
+                <img class="logo" src="./pictures/brand/samsung_- logo-1000x332.png" alt="Samsung">
+                <img class="logo" src="./pictures/brand/oppo-green-logo-transparent-0.png" alt="Oppo">
+                <img class="logo" src="./pictures/brand/huawei_- logo-500x508.png" alt="Huawei">
+                <img class="logo" src="./pictures/brand/Xiaomi-01.png" alt="Xiaomi">
+            </div>
+        </div>
     </div>
 
-    <div>
+    <div class="result">
         <h2>Results</h2>
-        <div = id="smartphone-list"></div>
+        <div id="smartphone-list"></div>
     </div>
     
     <script src="./loadItems.js"></script>

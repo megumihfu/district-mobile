@@ -55,7 +55,7 @@ const smartphones = [
         "storage": [1, 2, 3],
         "battery": "3279 mAh",
         "price": [4, "899€"],
-        "picture": "./pictures/iphone14.jpg",
+        "picture": "./pictures/iPhone14/iphone14.jpg",
         "cameraId": 1
     },
     {
@@ -68,7 +68,7 @@ const smartphones = [
         "storage": [2, 3, 4],
         "battery": "5000 mAh",
         "price": [4, "999€"],
-        "picture": "./pictures/s23.jpg",
+        "picture": "./pictures/S23/s23.jpg",
         "cameraId": 1
     },
     {
@@ -81,7 +81,7 @@ const smartphones = [
         "storage": [2, 3],
         "battery": "4500 mAh",
         "price": [3, "799€"],
-        "picture": "./pictures/xiaomi13.jpg",
+        "picture": "./pictures/Xiaomi13/xiaomi13.jpg",
         "cameraId": 2
     },
     {
@@ -94,7 +94,7 @@ const smartphones = [
         "storage": [1, 2, 3],
         "battery": "5000 mAh",
         "price": [4, "899€"],
-        "picture": "./pictures/s20.jpg",
+        "picture": "./pictures/S20/s20.jpg",
         "cameraId": 3
     },
     {
@@ -107,7 +107,7 @@ const smartphones = [
         "storage": [1, 2, 3, 4],
         "battery": "4373 mAh",
         "price": [3, "799€"],
-        "picture": "./pictures/iphone13promax.jpg",
+        "picture": "./pictures/iPhone13ProMax/iphone13promax.jpg",
         "cameraId": 1
     },
     {
@@ -120,7 +120,7 @@ const smartphones = [
         "storage": [1, 2, 3],
         "battery": "4500 mAh",
         "price": [4, "899€"],
-        "picture": "./pictures/xiaomi12s.jpg",
+        "picture": "./pictures/xiaomi12S/xiaomi12s.jpg",
         "cameraId": 4
     },
     {
@@ -133,7 +133,7 @@ const smartphones = [
         "storage": [2, 3],
         "battery": "4800 mAh",
         "price": [3, "779€"],
-        "picture": "./pictures/oppoX6.jpg",
+        "picture": "./pictures/oppoX6/oppoX6.jpg",
         "cameraId": 4
     }
 ]
