@@ -39,6 +39,7 @@ h1 {
     font-size: 24px;
     font-size: 48px;
     text-align: center;
+    margin-top: 0%;
 }
 
 h2 {
@@ -153,7 +154,7 @@ ul {
     text-transform: uppercase;
     font-weight: 700;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
 .logInNav {
@@ -505,9 +506,31 @@ ul {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 3%;
 }
 
 .teaser-video {
     display: flex;
     justify-content: center;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 0%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    gap: 4%;
+}
+
+.social {
+    display: flex;
+    height: 5vh;
 }

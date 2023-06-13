@@ -217,7 +217,7 @@ function filterResults() {
     document.getElementById("smartphone-list").innerHTML = resultsHtml;
 
     var element = document.getElementById("smartphone-list");
-    element.scrollIntoView({ behavior: "smooth" });
+    element.scrollIntoView({behavior: "smooth"});
 
 
 }
