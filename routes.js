@@ -18,6 +18,14 @@ app.get('/xiaomi13', (req, res) => {
   res.sendFile(__dirname + '/xiaomi13.html');
 });
 
+app.get('/iphone14', (req, res) => {
+  res.sendFile(__dirname + '/iphone14.html');
+});
+
+app.get('/s23', (req, res) => {
+  res.sendFile(__dirname + '/s23.html');
+});
+
 server.listen(port, () => {
     console.log(`Server is running on http://${host}:${port}`);
   });
