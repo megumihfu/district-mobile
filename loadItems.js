@@ -48,6 +48,7 @@ const smartphones = [
     {
         "id": 1,
         "brandId": 1,
+        "name": "iphone14.html",
         "model": "iPhone 14",
         "display": ["6.1-inch Super Retina XDR display", 1],
         "processor": "Apple A15 Bionic",
@@ -61,6 +62,7 @@ const smartphones = [
     {
         "id": 2,
         "brandId": 2,
+        "name": "s23.html",
         "model": "Samsung Galaxy S23",
         "display": ["6.8-inch Super AMOLED", 8],
         "processor": "Qualcomm Snapdragon 8 Gen2 (3,36 GHz)",
@@ -74,6 +76,7 @@ const smartphones = [
     {
         "id": 3,
         "brandId": 4,
+        "name": "xiaomI13.html",
         "model": "Xiaomi 13",
         "display": ["6.36-inch Oled", 3],
         "processor": "Qualcomm Snapdragon 8 Gen2",
@@ -87,6 +90,7 @@ const smartphones = [
     {
         "id": 4,
         "brandId": 2,
+        "name": "s20ultra.html",
         "model": "Samsung Galaxy S20 Ultra",
         "display": ["6.9-inch AMOLED", 9],
         "processor": "Samsung Exynos 990",
@@ -100,6 +104,7 @@ const smartphones = [
     {
         "id": 5,
         "brandId": 1,
+        "name": "iphone13.html",
         "model": "iPhone 13 Pro Max",
         "display": ["6.7-inch Oled", 7],
         "processor": "Apple A15 Bionic",
@@ -113,19 +118,21 @@ const smartphones = [
     {
         "id": 6,
         "brandId": 4,
+        "name": "xiaomi12s.html",
         "model": "Xiaomi 12S",
         "display": ["6.28-inch AMOLED", 2],
         "processor": "Qualcomm Snapdragon 8+ Gen1",
         "ram": "8 GB",
         "storage": [1, 2, 3],
         "battery": "4500 mAh",
-        "price": [4, "899€"],
+        "price": [2, "499€"],
         "picture": "./pictures/xiaomi12S/xiaomi12s.jpg",
         "cameraId": 4
     },
     {
         "id": 7,
         "brandId": 3,
+        "name": "oppoX6.html",
         "model": "Oppo Find X6",
         "display": ["6.74-inch AMOLED", 7],
         "processor": "MediaTek Dimensity 9200",
@@ -179,10 +186,10 @@ function filterResults() {
     var selectedScreen = Number(document.getElementById("Screen").value);
     var selectedPrice = Number(document.getElementById("Price").value);
 
-    console.log("Brand: " + selectedBrand)
+/*     console.log("Brand: " + selectedBrand)
     console.log("Camera: " + selectedCamera)
     console.log("Screen: " + selectedScreen)
-    console.log("Price: " + selectedPrice)
+    console.log("Price: " + selectedPrice) */
 
     var filteredSmartphonesNew = smartphones
 
@@ -212,7 +219,7 @@ function filterResults() {
     var resultsHtml = "";
     for (var i = 0; i < filteredSmartphonesNew.length; i++) {
       var smartphone = filteredSmartphonesNew[i];
-      resultsHtml += "<div class='smartphoneList'><p>" + smartphone.model + "</p>" + " <img class ='smartphone-picture' src=" + smartphone.picture + ">" + "<p>" + smartphone.price[1] + "</p></div>";
+      resultsHtml += "<div class='smartphoneList'><a href='./smartphone/" + smartphone.name + "'><p>" + smartphone.model + "</p></a>" + "<a href='./smartphone/" + smartphone.name + "'><img class ='smartphone-picture' src=" + smartphone.picture + "></a>" + "<p>" + smartphone.price[1] + "</p></div>";
     }
     document.getElementById("smartphone-list").innerHTML = resultsHtml;
 
