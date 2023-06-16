@@ -289,17 +289,6 @@ ul {
     height : 220px;
 }
 
-.logIn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 536px;
-    height: 429px;
-    background: rgba(219, 226, 227, 0.6);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    position: absolute;
-}
 
 .signPage {
     display: flex;
@@ -308,54 +297,74 @@ ul {
     align-items: center;
 }
 
-.signIn {
-    position: absolute;
-    width: 476px;
-    height: 36px;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 36px;
-    text-align: center;
-    color: #000000;
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(219, 226, 227, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 30%;
 }
 
-.inputUser {
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 58vh;
+    width: 23vw;    
+}
+
+.form2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 67vh;
+    width: 23vw;    
+}
+
+
+
+.input-user {
     display: flex;
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
-    font-size: 20px;
     justify-content: center;
-    box-sizing: border-box;
-    position: absolute;
-    width: 423px;
-    height: 73px; 
+    flex-direction: column;
     background: #CFCECE;
-    border-radius: 6px;
-    left: 636px;
+    border-radius: 7px;
+    font-size: large;
+    height: 15vh;
+    width: 100%;
+    margin-bottom: 8%;
+    padding-top: 6%;
+    padding-bottom: 6%;
 }
 
+
 .signButton {
+    display: flex;
     box-sizing: border-box;
-    position: absolute;
-    width: 423px;
-    height: 67px;
     background: #00A2D2;
     border: 1px solid #00A2D2;
     border-radius: 7px;
-    left: 636px;
     justify-content: center;
     align-items: center;
+    padding: 4%;
 }
 
-/* 
+.title-login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: xx-large;
+    margin-bottom: 8%;
+}
+
+
 .submitButton {
-    padding: 20px;
-    padding-left: 170px;
     display: flex;
     background: #00A2D2;
-    mix-blend-mode: normal;
     border: 1px solid #00A2D2;
     border-radius: 7px;
     font-family: 'Plus Jakarta Sans';
@@ -364,16 +373,16 @@ ul {
     font-size: 21px;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.56);
-} */
+    
+} 
 
 .submitButton:hover {
     color: whitesmoke;
 }
 
 .redirection {
-    position: absolute;
-    width: 411px;
-    height: 30px;
+    display: flex;
+    justify-content: left;
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 400;
